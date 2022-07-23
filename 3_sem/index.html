@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семинар 3</title>
+</head>
+
+<body>
+    <script>
+        // Задание 1
+        alert(`Доброе утро!`);
+        // Задание 2
+        alert(`Результат: ${158 + 2}`);
+        // Задание 3
+        let name = "Алевтина";
+        alert(`Привет ${name}!`);
+        // Задание 4
+        // let name2 = prompt(`Как Вас зовут?`); 
+        // alert(`Привет, мой господин ${name2}!`);
+        alert(`Привет, мой господин ${prompt(`Как Вас зовут?`)}!`);
+        // Задание 5
+        let name_5 = "Алевтина";
+        function names(name_x) {
+            alert(`Твоё имя: ${name_x}`); // let messeage = `Привет, ` +  name_x; alert(messeage);
+        }
+        names(name_5);
+        // Задание 6*
+        let x = confirm(`Вы уверенны?`);
+        if (x == true) {   // if (confirm(`Вы уверенны?`) {)
+            alert(`Мы рады, что Вы уверенны!`)
+        }
+        else {
+            alert(`Жаль, что Вы не уверенны!`)
+        }
+        // Задание 7*
+        let age = prompt(`Сколько Вам лет?`);
+        switch (age) {
+            case `18`:
+                alert(`Вы совершеннолетний, все можно!`)
+                break;
+            case `10`:
+                alert(`Вам надо учить уроки!`)
+                break;
+            case `30`:
+                alert(`Ложитесь спать, завтра на работу!`)
+                break;
+            default:
+                alert(`Мы не знаем, что Вам делать!`)
+                break;
+        }
+        // Задание 8*
+        let name3 = prompt(`Как Вас зовут?`);
+        let name0 = "Степан";
+        if (name3 == name0) {
+            alert(`Привет, мой повелитель ${name3}!`);
+        }
+        else {
+            alert(`Ты кто такой ${name3}? Давай досвидания!!!`);
+        }
+    </script>
+</body>
+
+</html>
